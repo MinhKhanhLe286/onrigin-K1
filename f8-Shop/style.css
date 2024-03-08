@@ -8,7 +8,15 @@ h1{
     3.fisrt-child
     4.last-child
 
+    pseudo element of css
+    1 :: before
+    2 :: after
+    3 :: first-letter
+    4 :: first-line
+    5 :: selection
 */
+
+
 h1:hover{
     color: red;
 }

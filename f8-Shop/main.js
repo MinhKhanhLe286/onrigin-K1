@@ -14,13 +14,11 @@
 //     },
 //     1000
 // )
-function get_abs(n){
-	var abs;
-    if (n < 0) {
-	n = n * -1;
-    }
-    abs = n
-    return abs;
-}
-console.log(get_abs(3));
- 
+// function get_abs(n){
+// 	var abs;
+//     if (n < 0) {
+// 	n = n * -1;
+//     }
+//     abs = n
+//     return abs;
+// }

@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="style.css">
         <style>
             .Box{
+                margin : 0px
+            }
+            .Box{
+                
                 width: 100%;
                 height: 129px;
                 background:rgba(190,157,124, alpha);
@@ -16,13 +20,40 @@
             .Box:active{
                 background-color: blue;
             }
+            .Box::after{
+                content: "Xin Chao";
+                color: aliceblue;
+                display: block;
+                width: 30%;
+                height: 30%;
+                background: black   ;
+            }
+            .Box::before{
+                content: "Helllo";
+                color: aliceblue;
+                
+                display: block;
+                width: 30%;
+                height: 30%;
+                background: black   ;
+            }
+            h1::first-letter{
+                font-size: 50px;
+            }
+            h1::first-line{
+                color: blue;
+            }
+            h1::selection{
+                color: red;
+                background-color:blue
+            }
         </style>
     </head>
     <body>
-        <div class ="Box"></div>
-        <h1>Javascript basic</h1>
+        <!-- <div class ="Box"></div>
+        <h1>Javascript basic <br/> Java or Php</h1>
 
-        <script src="main.js"></script>
+        
 
         <ol>
             <li class="ol1">Hover</li>
@@ -31,6 +62,27 @@
             <li class="ol1">last-child</li>
             <li class="ol1">root</li>
         </ol>
-        
+         -->
+        <!-- Nhập tên: <input id="input" value>
+        <br>
+        <button onclick="xin_chao()">Ok</button>
+        <script>
+            var xin_chao = function(){
+                var ten = document.getElementById("input").value
+                ten = "Xin Chao "+ ten
+
+                document.write(ten)
+            }
+        </script> -->
+
+        Enter my name: <input id = "input" value>
+        <button onclick="hello()">ok</button>
+        <script>
+            var hello = function(){
+                var hello = "Xin Chao "+ document.getElementById("input").value
+                document.write(hello);
+            }
+
+        </script>
     </body>
 </html>
